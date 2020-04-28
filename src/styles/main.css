@@ -1,0 +1,134 @@
+body {
+  color: #5D6165;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+}
+
+.wrapper {
+  width: 95%;
+  max-width: 1320px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/******** MAIN THINGS *********/
+a {
+  text-decoration: none;
+  color: #5D6165;
+}
+h1 {
+  font-size: 2.5em;
+  padding-bottom: 0.3em;
+}
+h2 {
+  font-size: 2.3em;
+}
+h3 {
+  font-size: 2em;
+}
+.btn-action {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  background-color: #fafbfc;
+  border: 2px solid #364F6B;
+  border-radius: 5px;
+  color: #364F6B;
+  padding: 1em 2em;
+  outline: 0;
+}
+
+
+
+
+
+/******** NAV *********/
+.inbox-header {
+  height: 100vh;
+  background: url('../img/courthouse.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-nav {
+  font-weight: 600;
+  background-color: rgba(255,255,255,0.9);
+  box-shadow: 0px 2px 5px 0px rgba(32,32,34,1);
+}
+.nav-links {
+  margin-top: 0;
+  display: flex;
+  flex-direction: row;
+  padding: 1.8rem 0;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+/*************** HEADING ************8*/
+.heading-card {
+  max-height: 70vh;
+  margin-top: 8rem;
+  padding: 2rem 1rem;
+  width: 70%;
+  min-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(255,255,255,0.95);
+  box-shadow: 0px 2px 5px 0px rgba(32,32,34,1);
+}
+.logo-container {
+  padding-left: 4em;
+  width: 50%;
+  min-width: 250px;
+  color: #364F6B;
+  text-align: center;
+  position: relative;
+}
+.logo-container img {
+  width: 100%;
+}
+.logo-container span {
+  position: relative;
+  top: -130px;
+}
+.service-block {
+  width: 50%;
+  padding: 1.5em 1.5em 2.5em;
+  font-size: 1.3em;
+}
+.services-list {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+/**************** GOALS SEC **************/
+.about-community {
+  padding-top: 7em;
+  text-align: center;
+  height: 70vh;
+}
+.goals-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.goal-circle {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.5em;
+  background-color: #364F6B;
+  width: 8.5rem;
+  height: 8.5rem;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.goal {
+  width: 33.33%;
+  padding: 3.5em 2em;
+  font-size: 1.1em;
+}
