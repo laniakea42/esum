@@ -1,0 +1,64 @@
+@media (max-width: 860px) {
+  .main-nav {
+    display: none;
+  }
+  /* .heading {
+    margin-top: 0;
+    padding-top: 4rem;
+  } */
+  .mobile-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em 1em;
+  }
+  .mobile-menu a:hover {
+    border-bottom: 0;
+  }
+  .mobile-menu img {
+    height: 4rem;
+  }
+  .btn-action {
+    font-size: .6em;
+    padding: 1.2rem 1.6rem;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fa-bars {
+    color: #364F6B;
+    font-size: 3rem;
+  }
+
+  .heading {
+    display: block;
+    min-width: 0;
+    width: 80vw;
+    margin-top: 4rem;
+    padding: 0 2rem;
+  }
+  .logo-container {
+    display: none;
+  }
+  .service-block {
+    width: 100%;
+    padding: 1.5em 0;
+  }
+
+  .goals-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .goal {
+    padding: 2em 1em;
+    width: 80vw;
+  }
+  .about-community h2{
+    padding-bottom: 1em;
+  }
+
+
+
+
+
+}
