@@ -2,10 +2,12 @@
   .main-nav {
     display: none;
   }
-  /* .heading {
-    margin-top: 0;
-    padding-top: 4rem;
-  } */
+  section {
+    padding: 5em 0 3em;
+  }
+  .card {
+    width: 100%;
+  }
   .mobile-menu {
     display: flex;
     justify-content: space-between;
@@ -19,9 +21,11 @@
     height: 4rem;
   }
   .btn-action {
+    width: 9rem;
     font-size: .6em;
     padding: 1.2rem 1.6rem;
     display: flex;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
   }
@@ -29,22 +33,19 @@
     color: #364F6B;
     font-size: 3rem;
   }
-
   .heading {
     display: block;
     min-width: 0;
-    width: 80vw;
+    width: 90%;
     margin-top: 4rem;
-    padding: 0 2rem;
   }
   .logo-container {
     display: none;
   }
   .service-block {
     width: 100%;
-    padding: 1.5em 0;
+    padding: 1em 0;
   }
-
   .goals-row {
     flex-direction: column;
     align-items: center;
@@ -56,9 +57,72 @@
   .about-community h2{
     padding-bottom: 1em;
   }
-
-
-
-
-
+  .using {
+    background-image: none;
+  }
+  .using {
+    width: 100%;
+  }
+  .card-on-img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+  }
+  .double-cols {
+    width: 100%;
+  }
+  .advantages-container {
+    flex-direction: column;
+  }
+  .advantages-list, .form-group {
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 3em;
+  }
+  .footer-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .footer-links ul {
+    width: 150px;
+  }
+  .directors .wrapper {
+    width: 100%;
+  }
+  .footer {
+    padding-top: 2em;
+  }
 }
+
+@media (min-width: 1000px) {
+  h1 {
+    padding-left: 0;
+    font-size: 2.6rem;
+  }
+  .heading{
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  tr>td:nth-child(4),
+  tr>th:nth-child(4){
+    display: none;
+  }
+  h1 {
+    font-size: 1.6rem;
+    padding-bottom: 0.5rem;
+  }
+  .table {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 555px) {
+  table {
+    width: 100%;
+  }
+  tr>td:nth-child(2),
+  tr>th:nth-child(2){
+    display: none;
+  }

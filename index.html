@@ -7,14 +7,14 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
   <title>ЕСЮМ</title>
-  <link rel="shortcut icon" href="./src/img/favicon.ico">
+  <link rel="shortcut icon" href="./src/img/esum/favicon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   <link rel="stylesheet" href="./src/styles/normalize.css">
   <link rel="stylesheet"  href="./src/styles/main.css">
   <link rel="stylesheet" href="./src/styles/mobile.css">
 </head>
 <body>
-    <header class="inbox-header">
+    <header class="index-header">
         <nav class="main-nav">
           <div class="wrapper">
             <ul class="nav-links">
@@ -32,7 +32,7 @@
           <a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
           <img src="./src/img/esum/logo_transparent.png" alt="ESUM">
         </div>
-
+        <div class="wrapper">
         <div class="heading card">
           <div class="service-block">
             <h1>Евразийский союз юристов и медиаторов</h1>
@@ -41,19 +41,20 @@
               <li>Юридическая помощь по защите прав потребителей</li>
               <li>Мирное урегулирование трансграничных споров по всем сферам гражданско-правовых правонарушений</li>
             </ul>
-            <button class="btn-action" type="button">Оставить заявку &nbsp;&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+            <a href="#leavemsg" class="btn-action" type="button">Оставить заявку &nbsp;&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
           </div>
 
-          <div class="logo-container">
+          <div class="logo-container text-center">
             <img src="./src/img/esum/logo_transparent.png" alt="ESUM">
             <span>et lex dei nobiscum est!</span>
           </div>
         </div>
+      </div>
     </header>
 
     <section class="about-community">
       <div class="wrapper">
-        <h2>Республиканское общественное объединение «Евразийский союз юристов и медиаторов "Praktikos"»</h2>
+        <h2>Республиканское общественное объединение<br>«Евразийский союз юристов и медиаторов "Praktikos"»</h2>
         <div class="goals">
           <div class="goals-row">
             <div class="goal">
@@ -74,9 +75,9 @@
     </section>
 
     <section class="using">
-      <div class="wrapper">
+
         <div class="card-on-img card">
-          <h3>Применение процедур медиации</h3>
+          <h2>Применение процедур медиации</h2>
           <ul class="using-list">
             <li>Cпоры (конфликты), рассматриваемые в ходе уголовного судопроизводства по делам небольшой и средней тяжести, об уголовных проступках (в том числе: ДТП, условно-досрочное освобождение)</li>
             <li>Cпоры (конфликты), рассматриваемые в ходе уголовного судопроизводства по тяжким преступлениям, в соответствии с законодательством РК</li>
@@ -87,13 +88,15 @@
             <li>Cпоры, связанные с авторским правом и интеллектуальной собственностью</li>
           </ul>
         </div>
-      </div>
+      
+      <a href="#" name="leavemsg"></a>
     </section>
 
     <section class="mediation-advantages">
+
       <div class="wrapper">
         <div class="advantages-container">
-          <div class="width50">
+          <div class="double-cols">
             <h2>Преимущества медиации</h2>
             <ul class="advantages-list">
               <li>В отличие от привычного судебного разбирательства, в процессе которого суду нужно найти виновного и установить степень его вины и ответственности, медиация способствует примирению оппонентов за счет достижения взаимовыгодного соглашения.</li>
@@ -103,7 +106,7 @@
               <li>Процесс медиации относительно непродолжителен.</li>
             </ul>
           </div>
-          <div class="form-container width50">
+          <div class="form-container double-cols">
             <form action="" class="form-group">
               <input type="text" name="name" placeholder="Введите имя" required>
               <input type="email" name="email" placeholder="Адрес электронной почты" required>
@@ -120,7 +123,7 @@
       <div class="wrapper">
         <div class="footer-links">
           <ul>
-            <li><a href="#">Руководство</a></li>
+            <li><a href="directors.html">Руководство</a></li>
             <li><a href="#">Медиаторы</a></li>
             <li><a href="#">Закон о юридической помощи</a></li>
           </ul>
