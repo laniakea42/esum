@@ -1,20 +1,30 @@
+@font-face {
+	font-family: 'Permian Slab';
+	src: url('../fonts/PermianSlabSerifTypeface.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
 body {
   color: #5D6165;
   font-size: 16px;
-  font-family: Arial, sans-serif;
+  font-family: Segoe UI, Helvetica, Arial, sans-serif;
 }
 .wrapper {
   width: 85%;
-  max-width: 1320px;
   margin-right: auto;
   margin-left: auto;
 }
+
 
 /******** MAIN THINGS *********/
 a {
   text-decoration: none;
   color: #5D6165;
   cursor: pointer;
+}
+h1, h2, h3,
+h4, h5, h6 {
+    font-family: 'Permian Slab', serif;
 }
 h1 {
   font-size: 2.1rem;
@@ -46,21 +56,22 @@ section, .footer {
 .mobile-menu {
   display: none;
 }
-.left {
-  float: left;
-}
-.right {
-  margin-left: auto;
-}
 .small {
   width: 15% !important;
 }
 .text-center {
   text-align: center;
 }
-
-
-
+em {
+  font-weight: 500;
+  font-style: normal;
+}
+.upper {
+  text-transform: uppercase;
+}
+.ta-right {
+  text-align: right;
+}
 
 /* PSEUDOCLASSES */
 .btn-action:active, input:focus, .textarea-msg:focus {
@@ -76,7 +87,7 @@ a:visited {
 
 
 /******** NAV *********/
-.inbox-header, .using {
+.index-header, .using {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -84,10 +95,12 @@ a:visited {
 .index-header {
   min-height: 100vh;
   background: url('../img/courthouse.jpg');
-  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .etc-header {
-  background-color: #dcdbe1;
+  background-color: #ebeef3;
+  padding: 6em 0;
+  box-shadow: inset 0px 2px 5px -1px rgba(32,32,34,0.9);
 }
 .main-nav, .mobile-menu {
   font-weight: 600;
@@ -96,7 +109,7 @@ a:visited {
   z-index: 8;
 }
 .nav-links {
-  margin-top: 0;
+  margin: 0;
   display: flex;
   flex-direction: row;
   padding: 1.4rem 0;
@@ -109,19 +122,40 @@ a:visited {
 }
 
 
+/****************DROPDOWN MENU***********/
+.dropdown-refs {
+    font-size: 0.8em;
+    display: none;
+    background-color: rgba(255,255,255, 1);
+    min-width: 160px;
+    position: absolute;
+    z-index: 13;
+    border: 3px solid #274b69;
+    box-shadow: 0px 2px 5px 0px rgba(32,32,34,1);
+}
+.dropdown-refs li {
+    padding: 1.2rem;
+    border-bottom: 2px solid #274b69;
+}
+.dropdown-refs li:last-child {
+  border-bottom: 0;
+}
+.dropdown:hover .dropdown-refs {
+    display: block;
+}
 
-/*************** HEADING ************8*/
+
+/*************** HEADING ***************/
 .heading {
-  max-height: 70vh;
-  margin-top: 5rem;
   padding: 1rem;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   justify-content: space-around;
-}
-.directors .heading {
   align-items: center;
+}
+.index-heading-card {
+  margin-top: 6rem;
 }
 .card {
   background-color: rgba(255,255,255,0.95);
@@ -150,16 +184,15 @@ a:visited {
   padding: 2rem 1em 1.5em;
   font-size: 1.2rem;
 }
-.services-list, .using-list, .advantages-list {
+.services-list, .using-list, .advantages-list, .news-block ul {
   list-style-type: disc;
   list-style-position: inside;
 }
 
 
 /******** MAIN *********/
-main {
-  position: absolute;
-  top: 50px;
+.main-content {
+  padding: 1rem 2rem;
 }
 
 
@@ -167,7 +200,8 @@ main {
 .about-community {
   text-align: center;
 }
-.goals-row {
+.goals-row,
+.dbl-col-container {
   display: flex;
   justify-content: space-between;
 }
@@ -192,7 +226,6 @@ main {
 }
 
 
-
 /******* USING MIDATION *******/
 .using {
   background-image: url('../img/justicewoman.jpg')
@@ -203,8 +236,6 @@ main {
   width: 60%;
   margin-left: auto;
 }
-
-
 
 
 /* ADVANTAGES */
@@ -250,4 +281,31 @@ main {
 }
 .footer li {
   margin-bottom: 1em;
+}
+
+
+/**** NAWS PAGE ****/
+.news-block img {
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/***** BILLS PAGE *****/
+.dbl-col-container {
+  text-align: justify;
+  padding: 3rem 0 2rem;
+}
+.first {
+  padding-top: 0;
+}
+.top-space {
+  padding-top: 2rem;
+}
+.left-col {
+  padding-right: 1rem;
+}
+.right-col {
+  padding-left: 1rem;
 }

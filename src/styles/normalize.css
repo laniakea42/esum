@@ -26,6 +26,9 @@ h1, h2, h3, h4, h5, h6 {
 img {
   border: 0;
 }
+ol {
+  padding-left: 1rem;
+}
 button,
 html input[type="button"], /* 1 */
 input[type="reset"],

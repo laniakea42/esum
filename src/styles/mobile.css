@@ -31,13 +31,18 @@
   }
   .fa-bars {
     color: #364F6B;
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
   .heading {
     display: block;
     min-width: 0;
     width: 90%;
+  }
+  .index-heading-card {
     margin-top: 4rem;
+  }
+  .etc-header {
+    padding: 2rem 0;
   }
   .logo-container {
     display: none;
@@ -59,9 +64,11 @@
   }
   .using {
     background-image: none;
-  }
-  .using {
     width: 100%;
+  }
+  .mediators-table {
+    font-size: 12px !important;
+    overflow-x: scroll;
   }
   .card-on-img {
     margin-left: auto;
@@ -71,7 +78,8 @@
   .double-cols {
     width: 100%;
   }
-  .advantages-container {
+  .advantages-container,
+  .dbl-col-container {
     flex-direction: column;
   }
   .advantages-list, .form-group {
@@ -92,6 +100,12 @@
   .footer {
     padding-top: 2em;
   }
+  .news-block img {
+    width: 100%;
+  }
+  .left-col, .right-col {
+    padding: 0;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -110,7 +124,7 @@
     display: none;
   }
   h1 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     padding-bottom: 0.5rem;
   }
   .table {
@@ -118,11 +132,12 @@
   }
 }
 
-@media (max-width: 555px) {
+ @media (max-width: 555px) {
   table {
     width: 100%;
   }
+  /*
   tr>td:nth-child(2),
   tr>th:nth-child(2){
     display: none;
-  }
+  } */
