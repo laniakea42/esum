@@ -6,6 +6,9 @@
     padding: 5em 0 3em;
     width: 100%;
   }
+  .service-block h1 {
+    font-size: 1.1em !important;
+  }
   .card {
     width: 100%;
   }
@@ -13,11 +16,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: .5em 1em;
+    padding: .1em 1em;
   }
   .mobile-menu-list {
   	position: absolute;
     align-items: center;
+    text-align: center;
   	left: 0;
   	top: 0;
   	padding: 0;
@@ -27,10 +31,9 @@
   }
   .mobile-menu-list ul {
     background-color: #eee;
-    width: 320px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30%;
+    width: 300px;
+    margin: auto;
+    margin-top: 9vh;
     box-shadow: 0px 2px 5px 0px rgba(32,32,34,1);
   }
   .mobile-menu-list li {
@@ -41,7 +44,7 @@
     border-bottom: 0;
   }
   .mobile-menu img {
-    height: 4rem;
+    height: 3.8rem;
   }
   .btn-action {
     width: 9rem;
@@ -54,7 +57,7 @@
   }
   .fa-bars {
     color: #364F6B;
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
   .heading {
     display: block;
@@ -62,7 +65,7 @@
     width: 90%;
   }
   .index-heading-card {
-    margin-top: 4rem;
+    margin-top: 7vh;
   }
   .etc-header {
     padding: 2rem 0;
